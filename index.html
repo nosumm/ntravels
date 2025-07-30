@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey to 100 Countries</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Journey to 100</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#countries">Countries</a></li>
+                <li><a href="#next-up">Next Up</a></li>
+                <li><a href="#stats">Statistics</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Journey to 100 Countries</h1>
+            <p>Following my dream to explore every corner of our beautiful planet</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="visitedCount">9</span> of 100 countries visited
+                </div>
+            </div>
+            
+            <a href="#countries" class="cta-button">Explore My Journey</a>
+        </div>
+    </section>
+
+    <!-- Next Up Section -->
+    <section id="next-up" class="section" style="background: var(--warm-beige);">
+        <div class="container">
+            <h2 class="section-title">Next Up on the Journey</h2>
+            <div class="next-up-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <!-- Next up countries will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="section">
+        <div class="container">
+            <h2 class="section-title">Countries Visited</h2>
+            <div class="countries-grid" id="countriesGrid">
+                <!-- Countries will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="section stats">
+        <div class="container">
+            <h2 class="section-title">Travel Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="countriesVisited">9</div>
+                    <div class="stat-label">Countries Visited</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="continents">3</div>
+                    <div class="stat-label">Continents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalMiles">31,847</div>
+                    <div class="stat-label">Miles Traveled</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="daysOnRoad">127</div>
+                    <div class="stat-label">Days on the Road</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About My Journey</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-light); margin-bottom: 2rem;">
+                    Let's explore this planet!
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-light);">
+                    Follow my Journey around the world, starting with 100 countries!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📖</a>
+                    <a href="#" class="social-link">✉️</a>
+                </div>
+                <p>&copy; Follow my Journey around the world, starting with 100 countries!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Country Button -->
+    <button class="add-country-btn" id="addCountryBtn">+</button>
+
+    <script src="data/countries.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
