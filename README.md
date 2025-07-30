@@ -1,9 +1,9 @@
-# Journey to 100 Countries 🌍
+# ntravels
 
-A clean, scalable travel showcase website to document your journey to visit 100 countries around the world.
+A clean, scalable travel showcase website to document my journey around the world.
 
 
-## ✨ Features
+## Features
 
 - **Progress Tracking**: Visual progress bar showing journey completion (9/100 countries)
 - **Country Showcase**: Dynamic cards displaying visited countries with flags, descriptions, and dates
